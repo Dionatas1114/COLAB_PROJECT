@@ -3,20 +3,21 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider as MuiThemeProvider, createTheme } from '@mui/material/styles';
 
 import { ChosenTheme } from './ChosenTheme';
-
-const brandColor = '#00b8d4';
+import { Colors } from '@/assets/colors';
 
 const createThemeHelper = (theme: 'dark' | 'light') => {
+  const { colab } = Colors;
   const isDark = theme === 'dark';
+
   return createTheme({
     palette: {
       mode: theme,
       background: {
-        default: isDark ? '#303030;' : '#f0f0f0',
-        paper: isDark ? '#242526' : '#ffffff',
+        default: isDark ? colab.dark : '#f0f0f0',
+        paper: isDark ? colab.softDark : '#ffffff',
       },
       primary: {
-        main: brandColor,
+        main: colab.main,
       },
       error: {
         main: 'rgb(232, 51, 51)',
