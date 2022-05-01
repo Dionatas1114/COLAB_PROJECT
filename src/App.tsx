@@ -1,14 +1,14 @@
 import { BrowserRouter as Router } from 'react-router-dom';
 import { ChosenThemeProvider, ThemeProvider } from '@/themes';
 
-import { Main } from '@/pages/Main';
+import AppRoutes from '@/routes';
 
 export const App = () => {
   return (
     <Router>
       <ChosenThemeProvider>
         <ThemeProvider>
-          <Main />
+          <AppRoutes />
         </ThemeProvider>
       </ChosenThemeProvider>
     </Router>

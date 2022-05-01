@@ -11,3 +11,9 @@ will be develop as a test requested by COLAB company.
 - Install dependencies using `yarn`  (Node version: 14.17.6)
 - Start the server with `yarn dev`
 - To use, run `yarn analyze`
+
+## Error
+if there is an error, try running the following command:
+```
+    npm i -D esbuild
+```
