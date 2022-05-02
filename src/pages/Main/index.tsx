@@ -1,20 +1,13 @@
-import { Link, Slider, styled } from '@mui/material';
+import { styled } from '@mui/material';
 
 import Header from '@/components/header';
+import { NavBar } from '../NavBar';
 
 export const Main = () => {
   return (
     <Root>
       <Header />
-      <div>
-        <h2>
-          How much do you like{' '}
-          <Link href='https://vitejs.dev/' target='_blank' rel='_'>
-            Vite?
-          </Link>
-        </h2>
-        <Slider />
-      </div>
+      <NavBar />
     </Root>
   );
 };
