@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://randomuser.me/api',
+  baseURL: import.meta.env.VITE_BASE_URL,
 });
 
 export { api };
