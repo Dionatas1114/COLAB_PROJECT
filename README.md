@@ -46,7 +46,7 @@ if there is an error, try running the following command:
 
 ## Report
 
-In the development of this project, I Was able to gain more experience with the library that 
+In the development of this project, I was able to gain more experience with the library that 
 I usually use (Material UI) and practice writing with TypeScript. 
-I felt a bit of difficulty because there was little data to consume, so I Had to use creative. 
-Besides, I Tried to implement the bottom bar, but there was only time to create it.
+I felt a bit of difficulty because there was little data to consume, so I had to use creative. 
+Besides, I tried to implement the bottom bar, but there was only time to create it.
