@@ -1,12 +1,12 @@
 import { AppBar, Toolbar } from '@mui/material';
 
-import DarkModeToggle from './DarkModeToggle';
+import SwitchTheme from '@/components/switchTheme';
 
 const Header = () => {
   return (
     <AppBar position='fixed'>
       <Toolbar variant='dense'>
-        <DarkModeToggle />
+        <SwitchTheme />
       </Toolbar>
     </AppBar>
   );

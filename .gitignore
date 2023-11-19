@@ -3,6 +3,8 @@ node_modules
 dist
 dist-ssr
 *.local
+*/**.lock
+*/**lock.json
 bundle-size
 tmpnodejsnpm-cache/
 .env

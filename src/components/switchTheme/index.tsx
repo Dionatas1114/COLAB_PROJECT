@@ -1,33 +1,31 @@
 import { useContext } from 'react';
 import { Brightness3 as DarkModeIcon, WbSunny as LightModeIcon } from '@mui/icons-material';
 
-import { ChosenTheme } from '@/themes';
 import { Checkbox, Ball, Label, Root, SunIcon, MoonIcon } from './styles';
+import { ThemeContext } from '@/assets/themes';
 
-const DarkModeToggle = () => {
-  const { theme, setTheme } = useContext(ChosenTheme);
+export default function SwitchTheme() {
+  const { theme, setTheme } = useContext(ThemeContext);
   return (
     <Root>
       <Checkbox
-        type='checkbox'
-        id='dark-mode-toggle'
+        id="switch-theme-toggle"
+        type="checkbox"
         checked={theme === 'dark'}
         onChange={({ target: { checked } }) => {
           const themeToSet = checked ? 'dark' : 'light';
           setTheme(themeToSet);
         }}
       />
-      <Label htmlFor='dark-mode-toggle'>
+      <Label htmlFor="switch-theme-toggle">
         <MoonIcon>
-          <DarkModeIcon color='inherit' fontSize='small' />
+          <DarkModeIcon color="inherit" fontSize="small" />
         </MoonIcon>
         <SunIcon>
-          <LightModeIcon color='inherit' fontSize='small' />
+          <LightModeIcon color="inherit" fontSize="small" />
         </SunIcon>
         <Ball isChecked={theme === 'dark'} />
       </Label>
     </Root>
   );
-};
-
-export default DarkModeToggle;
+}

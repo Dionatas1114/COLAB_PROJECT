@@ -1,6 +1,11 @@
 import { styled } from '@mui/material';
 import isPropValid from '@emotion/is-prop-valid';
 
+const Root = styled('div')`
+  transition: background 0.2s linear;
+  padding: 0px 20px;
+`;
+
 const Checkbox = styled('input')`
   opacity: 0;
   position: absolute;
@@ -9,6 +14,7 @@ const Checkbox = styled('input')`
 interface BallProps {
   isChecked: boolean;
 }
+
 const Ball = styled('div', {
   shouldForwardProp: isPropValid,
 })<BallProps>`
@@ -38,10 +44,6 @@ const Label = styled('label')`
   transform: scale(1.5);
 `;
 
-const Root = styled('div')`
-  transition: background 0.2s linear;
-`;
-
 const SunIcon = styled('i')`
   color: #f39c12;
   & svg {
@@ -51,6 +53,7 @@ const SunIcon = styled('i')`
     font-size: 0.6em;
   }
 `;
+
 const MoonIcon = styled('i')`
   color: #f1c40f;
   & svg {
