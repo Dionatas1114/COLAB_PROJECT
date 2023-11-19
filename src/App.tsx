@@ -1,16 +1,12 @@
 import { BrowserRouter as Router } from 'react-router-dom';
-import { ChosenThemeProvider, ThemeProvider } from '@/themes';
+import { AppThemeProvider } from '@/assets/themes';
 
 import AppRoutes from '@/routes';
 
-export const App = () => {
-  return (
-    <Router>
-      <ChosenThemeProvider>
-        <ThemeProvider>
-          <AppRoutes />
-        </ThemeProvider>
-      </ChosenThemeProvider>
-    </Router>
-  );
-};
+export const App = () => (
+  <Router>
+    <AppThemeProvider>
+      <AppRoutes />
+    </AppThemeProvider>
+  </Router>
+);
